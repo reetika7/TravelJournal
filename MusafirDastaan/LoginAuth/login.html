@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/png" href="../Images/travel-bag.png">
+
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="wrapper">
+                <div class="title">Login</div>
+                <form action="../MainContent/homePage.html" onsubmit="return validateForm()">
+                    <div class="field">
+                        <input type="text" id="email" name="Email Address" placeholder="Enter your email" required>
+                        <small class="error" id="emailError"></small>
+                    </div>
+                    <div class="field">
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                        <small class="error" id="passwordError"></small>
+                    </div>
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <div class="pass-link">
+                            <a href="forgetPass.html">Forgot password?</a>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Login"> <a href="HomePage/homePage.html"></a>
+                    </div>
+                    <div class="signup-link">
+                        Not a member? <a href="signup.html">Signup now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <img src="../Images/girlTravel.jpg" alt="Travel Image">
+        </div>
+    </div>
+
+    <script src="validateLogin.js"></script>
+</body>
+</html>

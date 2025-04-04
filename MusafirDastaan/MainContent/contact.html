@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="../Images/travel-bag.png">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../Images/journal.png" alt="Logo">
+            <!-- <span>Musafir Aur Manzilein</span> -->
+            <span>Musafir Ki Dastaan</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="../LoginAuth/login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <div class="contact-box">
+            <!-- <h2>Contact Us</h2> -->
+            <h2>You can send Digital Chitthi ✍️📜</h2>
+            <p>Have questions? Reach out to us and we’ll get back to you soon.</p>
+            <form action="#" method="post">
+                <div class="input-box">
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" name="email" placeholder="Your Email id" required>
+                </div>
+                <div class="input-box">
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button id="submitBtn" type="submit" onclick="showMessage()">Send Message</button>
+                <p id="sentMessage"></p>
+
+                <!-- <div class="input-box"> -->
+                    <!-- <input type="text" id="name" name="name" placeholder="Your Full Name" required oninput="checkInputs()"> -->
+                <!-- </div>
+                <div class="input-box">
+                    <input type="email" id="email" name="email" placeholder="Your Email id" required oninput="checkInputs()">
+                </div>
+                <div class="input-box">
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required oninput="checkInputs()"></textarea>
+                </div>
+                <button id="submitBtn" type="submit" onclick="showMessage()" disabled>Send Message</button>
+                <p id="sentMessage"></p> -->
+            </form>
+        </div>
+    </section>
+
+    <!-- <script src="contact.js"></script> -->
+    <script>
+        function showMessage(){
+            let sentMessage = document.getElementById("sentMessage");
+
+            sentMessage.innerText = "Your digital chitthi has been sent !!";
+            sentMessage.style.marginTop = "10px";
+            sentMessage.style.color = "#444";
+        }
+    </script>
+
+
+    <!-- Footer -->
+    <!-- <footer>
+        <p>&copy; 2025 TravelBuddy. All rights reserved.</p>
+    </footer> -->
+
+</body>
+</html>

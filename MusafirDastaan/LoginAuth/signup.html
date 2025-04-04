@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>SignUp Page</title>
+      <link rel="stylesheet" href="login.css">
+      <link rel="icon" type="image/png" href="../Images/travel-bag.png">
+
+   </head>
+   <body>
+      <div class="container">
+         <div class="left">
+            <div class="wrapper">
+               <div class="title">
+                  SignUp
+               </div>
+               <form action="#" onsubmit="return validateSignupForm()">
+                  <div class="field">
+                     <input type="text" id="signupEmail" placeholder="Enter your email" required>
+                     <small id="signupEmailError" class="error"></small>
+                  </div>
+                  <div class="field">
+                     <input type="password" id="signupPassword" placeholder="Enter new password" required>
+                     <small id="signupPasswordError" class="error"></small>
+                  </div>
+                  <div class="field">
+                     <input type="password" id="confirmPass" placeholder="Confirm password" required>
+                     <small id="confirmPasswordError" class="error"></small>
+                  </div>
+                  <!-- <div class="content">
+                     <div class="checkbox">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                     </div>
+                     <div class="pass-link">
+                        <a href="#">Forgot password?</a>
+                     </div>
+                  </div> -->
+                  <div class="field">
+                     <input type="submit" value="Sign Up">
+                  </div>
+                  <div class="field">
+                     <div class="backTo">
+                        <a href="login.html">Back to Login</a>
+                     </div>
+                  </div>
+                  <!-- <div class="signup-link">
+                     Not a member? <a href="#">Signup now</a>
+                  </div> -->
+               </form>
+            </div>
+         </div>
+         <div class="right">
+            <img src="../Images/travelSignup.jpg" alt="Travel Image">
+         </div>
+      </div>
+
+      <script src="validateSignup.js"></script>
+   </body>
+</html>

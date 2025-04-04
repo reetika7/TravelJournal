@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Forget Password</title>
+      <link rel="stylesheet" href="login.css">
+      <link rel="icon" type="image/png" href="../Images/travel-bag.png">
+
+   </head>
+   <body>
+    <div class="container">
+        <div class="left">
+            <div class="wrapper">
+                <div class="title">
+                   Forget Password ?
+                </div>
+                <form action="#" onsubmit="return validateForgetForm()">
+                   <div class="field">
+                      <input type="text" id="forgetEmail" placeholder="Enter your email" required>
+                      <small class="error" id="forgetEmailError"></small>
+                   </div>
+                   <div class="field">
+                      <input type="submit" value="Reset Password" id="reset">
+                   </div>
+                   <div class="field">
+                       <div class="backTo">
+                          <a href="login.html">Back to Login</a>
+                       </div>
+                    </div>
+                </form>
+             </div>
+        </div>
+        <div class="right">
+            <img src="../Images/forgetPass.jpg" alt="Travel Image">
+        </div>
+    </div>
+   
+   <script src="validateForget.js"></script>
+      
+   </body>
+</html>
