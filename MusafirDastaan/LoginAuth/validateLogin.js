@@ -26,3 +26,16 @@ function validateForm() {
 
     return isValid; // Prevent form submission if invalid
 }
+
+function togglePasswordVisibility() {
+    const passwordInput = document.getElementById("password");
+    const toggleIcon = document.getElementById("togglePassword");
+
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleIcon.textContent = "🙈"; // eye-slash emoji
+    } else {
+        passwordInput.type = "password";
+        toggleIcon.textContent = "👁️"; // eye emoji
+    }
+}

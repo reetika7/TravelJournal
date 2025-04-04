@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 /* General Styles */
-body {
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    /* background: #f2f2f2; */
-    background: linear-gradient(-135deg, #2ecc71, #145a32);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
+body {
+    background: linear-gradient(-135deg, #2ecc71, #145A32);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Navigation Bar */
@@ -16,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: #333;
-    padding: 15px 20px;
+    padding: 10px 15px;
 }
 
 .navbar .logo {
@@ -105,14 +110,16 @@ body {
 /* Stories Section */
 .stories-section {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background: linear-gradient(-135deg, #2ecc71, #145A32);
+    /* background-color: #f9f9f9; */
     text-align: center;
 }
 
 .section-title {
-    margin-top: 5px;
+    margin-bottom: 30px;
     font-size: 32px;
-    color: #145a32;
+    color:white;
+    /* color: #145a32; */
     /* margin-bottom: 30px; */
 }
 
